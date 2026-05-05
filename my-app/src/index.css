@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf8f3;
+  color: #1a1a1a;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

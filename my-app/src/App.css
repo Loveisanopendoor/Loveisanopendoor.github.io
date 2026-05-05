@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf8f3;
+  color: #1a1a1a;
+  font-family: sans-serif;
+}
+
+/* ── 섹션 공통 ── */
+.hero,
+.about,
+.education,
+.projects,
+.intl,
+.awards,
+.contact {
+  padding: 80px 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about,
+.education,
+.projects,
+.intl,
+.awards,
+.contact {
+  border-top: 1px solid #ddd;
+}
+
+/* ── h2 통일 ── */
+.about h2,
+.education h2,
+.projects h2,
+.intl h2,
+.awards h2,
+.contact h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+/* ── Hero ── */
+.hero-label {
+  font-size: 0.9rem;
+  color: #999;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 24px;
+  line-height: 1.8;
+}
+
+/* ── About ── */
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+/* ── Education ── */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.edu-item:first-child {
+  border-top: 1px solid #eee;
+}
+
+.edu-school {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.edu-detail {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.edu-degree {
+  font-size: 1rem;
+  color: #555;
+}
+
+.edu-period {
+  font-size: 0.85rem;
+  color: #aaa;
+  white-space: nowrap;
+  margin-left: 32px;
+  padding-top: 2px;
+}
+
+/* ── Projects ── */
+.project-card {
+  background-color: #f0ede6;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 20px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  color: #888;
+}
+
+.project-year {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.project-link {
+  font-size: 1rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 2px;
+  transition: border-color 0.2s;
+}
+
+.project-link:hover {
+  border-color: #1a1a1a;
+}
+
+/* ── International ── */
+.intl-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.intl-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.intl-item:first-child {
+  border-top: 1px solid #eee;
+}
+
+.intl-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.intl-org {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.intl-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.intl-year {
+  font-size: 0.85rem;
+  color: #aaa;
+  white-space: nowrap;
+  margin-left: 32px;
+  padding-top: 2px;
+}
+
+/* ── Awards ── */
+.awards-sub {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.awards-sub:first-of-type {
+  margin-top: 0;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.award-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.award-item:first-child {
+  border-top: 1px solid #eee;
+}
+
+.award-title {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.award-year {
+  font-size: 0.85rem;
+  color: #aaa;
+  white-space: nowrap;
+  margin-left: 32px;
+}
+
+/* ── Contact ── */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #444;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background-color: #3c3c3c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  animation: fadeout 2s forwards;
+  z-index: 999;
+}
+
+@keyframes fadeout {
+  0%   { opacity: 1; }
+  70%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px;
+  height: 60px;
+  background-color: #faf8f3;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-links a {
+  font-size: 0.88rem;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #1a1a1a;
+}
+
+.hero {
+  padding-top: 140px;
+}
+
+/* ── 모바일 반응형 ── */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 24px;
+  }
+
+  .navbar-links {
+    gap: 16px;
+  }
+
+  .navbar-links a {
+    font-size: 0.78rem;
+  }
+
+  .hero,
+  .about,
+  .education,
+  .projects,
+  .intl,
+  .awards,
+  .contact {
+    padding: 60px 24px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  .edu-item,
+  .intl-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .edu-period,
+  .intl-year {
+    margin-left: 0;
+  }
+
+  .award-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .award-year {
+    margin-left: 0;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
