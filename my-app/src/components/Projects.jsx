@@ -1,6 +1,13 @@
 function Projects() {
   const items = [
     {
+      tags: ['Web Design', 'Frontend', 'Backend'],
+      year: '2026',
+      title: 'UTokyo iii Exhibition — Exhibition Website',
+      desc: 'Designed and developed the website for the University of Tokyo’s iii Exhibition, handling visual design, frontend implementation, and backend development.',
+      link: 'https://iiiexhibition.com/',
+    },
+    {
       tags: ['Design', 'Art'],
       year: '2025',
       title: 'RE:WIRE — Industrial Bonsai Art · Expo 2025 Osaka',
