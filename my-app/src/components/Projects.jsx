@@ -1,10 +1,10 @@
 function Projects() {
   const items = [
     {
-      tags: ['#JavaScript', '#TypeScript', '#Python', '#HTML', '#CSS'],
+      tags: ['#JavaScript', '#Python'],
       year: '2026',
       title: 'UTokyo iii Exhibition — Full-Stack Web Development',
-      desc: 'Built the website for The University of Tokyo’s iii Exhibition, taking ownership of UI design, frontend implementation, and backend development. Combined design and development to deliver a complete web experience.',
+      desc: 'Built the website for The University of Tokyo’s iii Exhibition, taking ownership of UI design, frontend implementation, and backend development.',
       link: 'https://iiiexhibition.com/',
     },
     {
