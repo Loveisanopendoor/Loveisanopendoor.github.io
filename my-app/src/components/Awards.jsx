@@ -7,7 +7,7 @@ function Awards() {
   ]
 
   const honors = [
-    { title: 'Japanese Government (MEXT) Undergraduate Scholarship', year: '2021 –' },
+    { title: 'Japanese Government (MEXT) Scholarship · Fully Funded Undergraduate & Graduate Studies', year: '2021 – Present' },
     { title: 'Mathematics & Data Science Program Completion · The University of Osaka', year: '2025' },
     { title: 'GCI Program Completion · The University of Tokyo', year: '2024' },
   ]

@@ -4,8 +4,11 @@ function Projects() {
       tags: ['#JavaScript', '#Python'],
       year: '2026',
       title: 'UTokyo iii Exhibition — Full-Stack Web Development',
-      desc: 'Built the website for The University of Tokyo’s iii Exhibition, taking ownership of UI design, frontend implementation, and backend development.',
-      link: 'https://iiiexhibition.com/',
+      desc: 'Designed and developed both 2026 iii Exhibition websites for The University of Tokyo, covering UI design, frontend implementation, and backend development.',
+      links: [
+        { label: 'Main Exhibition', url: 'https://iiiexhibition.com/' },
+        { label: 'Beginning Exhibition', url: 'https://utokyo-iiiexhibition-2026-beginning.pages.dev/' },
+      ],
     },
     {
       tags: ['Design', 'Art'],
@@ -45,8 +48,12 @@ function Projects() {
           </div>
           <h3>{item.title}</h3>
           <p>{item.desc}</p>
-          {item.link && (
-            <a className="project-link" href={item.link} target="_blank">View Project →</a>
+          {(item.links || item.link) && (
+            <div className="project-links">
+              {(item.links || [{ label: 'View Project', url: item.link }]).map((link) => (
+                <a className="project-link" key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">{link.label} →</a>
+              ))}
+            </div>
           )}
         </div>
       ))}
