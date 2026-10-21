@@ -4,7 +4,7 @@ function Education() {
       school: 'The University of Tokyo',
       detail: 'Graduate School of Interdisciplinary Information Studies',
       degree: 'M.A. Student · Cultural and Human Information Studies',
-      period: '2026 -',
+      period: '2026 - Present',
     },
     {
       school: 'The University of Osaka',

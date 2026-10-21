@@ -3,7 +3,7 @@ function About() {
     <section className="about" id="about">
       <h2>About Me</h2>
       <p>
-        Born in Seoul, Korea, I am a master's student at The University of Tokyo,
+        Born in Seoul, South Korea, I am a master's student at The University of Tokyo,
         researching how cities change over time through AI and street-level imagery.
         My background is in mathematics at The University of Osaka, and I am passionate
         about the intersection of data visualization, GIS, and human-centered design.

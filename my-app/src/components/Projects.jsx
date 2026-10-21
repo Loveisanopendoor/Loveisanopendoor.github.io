@@ -4,7 +4,7 @@ function Projects() {
       tags: ['#JavaScript', '#Python'],
       year: '2026',
       title: 'UTokyo iii Exhibition — Full-Stack Web Development',
-      desc: 'Designed and developed both 2026 iii Exhibition websites for The University of Tokyo, covering UI design, frontend implementation, and backend development.',
+      desc: 'Developed both 2026 iii Exhibition websites for The University of Tokyo, covering UI design, frontend implementation, and backend development.',
       links: [
         { label: 'Main Exhibition', url: 'https://iiiexhibition.com/' },
         { label: 'Beginning Exhibition', url: 'https://utokyo-iiiexhibition-2026-beginning.pages.dev/' },
