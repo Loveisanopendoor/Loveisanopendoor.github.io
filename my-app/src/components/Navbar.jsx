@@ -18,8 +18,8 @@ function Navbar() {
           <a key={i} href={link.href}>{t(link.label)}</a>
         ))}
       </div>
-      <div className="language-switch" role="group" aria-label="Language / 언어 / 言語">
-        {[['en', 'EN'], ['ko', '한국어'], ['ja', '日本語']].map(([code, label]) => (
+      <div className="language-switch" role="group" aria-label="Language / 言語">
+        {[['en', 'EN'], ['ja', 'JP']].map(([code, label]) => (
           <button key={code} type="button" lang={code} aria-pressed={language === code} onClick={() => changeLanguage(code)}>{label}</button>
         ))}
       </div>

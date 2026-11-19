@@ -419,16 +419,15 @@ body {
 
 /* Language controls and wrapping for translated navigation. */
 .language-switch { display: flex; align-items: center; gap: 4px; }
-.language-switch button { font: inherit; font-size: 0.78rem; padding: 6px 8px; border: 1px solid transparent; border-radius: 4px; color: #777; background: transparent; cursor: pointer; }
-.language-switch button[aria-pressed="true"] { color: #1a1a1a; border-color: #bbb; background: #f0ede6; }
+.language-switch button { font: inherit; font-size: 0.78rem; padding: 6px 8px; border: 0; border-radius: 0; font-weight: 400; color: #777; background: transparent; cursor: pointer; }
+.language-switch button[aria-pressed="true"] { color: #1a1a1a; font-weight: 700; }
 .language-switch button:focus-visible { outline: 2px solid #555; outline-offset: 2px; }
 .navbar { gap: 16px; }
 .navbar-name { white-space: nowrap; }
 .navbar-links { gap: 20px; }
 .project-tags { flex-wrap: wrap; }
 section[id] { scroll-margin-top: 90px; }
-:lang(ko) .hero-title, :lang(ja) .hero-title { font-family: sans-serif; }
-:lang(ko) p, :lang(ko) h3 { word-break: keep-all; overflow-wrap: anywhere; }
+:lang(ja) .hero-title { font-family: sans-serif; }
 @media (max-width: 1000px) {
   .navbar { flex-wrap: wrap; height: auto; min-height: 60px; padding: 12px 24px; gap: 10px; }
   .navbar-name { margin-right: auto; }
