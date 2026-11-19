@@ -1,4 +1,6 @@
+import { useLanguage } from '../i18n/LanguageContext'
 function Awards() {
+  const { t } = useLanguage()
   const awards = [
     { title: '1st Prize · Urban Engineering GIS Competition, Kyoto University — Presented in New York', year: '2024' },
     { title: '2nd Prize · Japan–China–Korea Speech Contest, Trilateral Cooperation Secretariat (TCS)', year: '2025' },
@@ -14,17 +16,17 @@ function Awards() {
 
   const renderList = (items) => items.map((item, i) => (
     <div className="award-item" key={i}>
-      <span className="award-title">{item.title}</span>
-      <span className="award-year">{item.year}</span>
+      <span className="award-title">{t(item.title)}</span>
+      <span className="award-year">{t(item.year)}</span>
     </div>
   ))
 
   return (
     <section className="awards" id="awards">
-      <h2>Awards & Honors</h2>
-      <p className="awards-sub">Awards</p>
+      <h2>{t('Awards & Honors')}</h2>
+      <p className="awards-sub">{t('Awards')}</p>
       <div className="awards-list">{renderList(awards)}</div>
-      <p className="awards-sub">Honors</p>
+      <p className="awards-sub">{t('Honors')}</p>
       <div className="awards-list">{renderList(honors)}</div>
     </section>
   )

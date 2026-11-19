@@ -1,4 +1,6 @@
+import { useLanguage } from '../i18n/LanguageContext'
 function Projects() {
+  const { t } = useLanguage()
   const items = [
     {
       tags: ['#JavaScript', '#Python'],
@@ -35,23 +37,23 @@ function Projects() {
 
   return (
     <section className="projects" id="projects">
-      <h2>Projects</h2>
+      <h2>{t('Projects')}</h2>
       {items.map((item, i) => (
         <div className="project-card" key={i}>
           <div className="project-header">
             <div className="project-tags">
               {item.tags.map((tag, j) => (
-                <span className="tag" key={j}>{tag}</span>
+                <span className="tag" key={j}>{t(tag)}</span>
               ))}
             </div>
-            <span className="project-year">{item.year}</span>
+            <span className="project-year">{t(item.year)}</span>
           </div>
-          <h3>{item.title}</h3>
-          <p>{item.desc}</p>
+          <h3>{t(item.title)}</h3>
+          <p>{t(item.desc)}</p>
           {(item.links || item.link) && (
             <div className="project-links">
               {(item.links || [{ label: 'View Project', url: item.link }]).map((link) => (
-                <a className="project-link" key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">{link.label} →</a>
+                <a className="project-link" key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">{t(link.label)} →</a>
               ))}
             </div>
           )}

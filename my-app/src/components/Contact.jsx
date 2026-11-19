@@ -1,8 +1,10 @@
+import { useLanguage } from '../i18n/LanguageContext'
 import { useState } from 'react'
 import { MdEmail } from 'react-icons/md'
 import { FaLinkedin } from 'react-icons/fa'
 
 function Contact() {
+  const { t } = useLanguage()
   const [copied, setCopied] = useState(false)
 
   const copyEmail = () => {
@@ -13,9 +15,9 @@ function Contact() {
 
   return (
     <section className="contact" id="contact">
-      <h2>Contact</h2>
+      <h2>{t('Contact')}</h2>
 
-      {copied && <div className="toast">Copied to clipboard!</div>}
+      {copied && <div className="toast">{t('Copied to clipboard!')}</div>}
 
       <div className="contact-info">
         <div className="contact-item" onClick={copyEmail}>

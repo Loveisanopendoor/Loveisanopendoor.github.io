@@ -1,4 +1,6 @@
+import { useLanguage } from '../i18n/LanguageContext'
 function Education() {
+  const { t } = useLanguage()
   const items = [
     {
       school: 'The University of Tokyo',
@@ -16,16 +18,16 @@ function Education() {
 
   return (
     <section className="education" id="education">
-      <h2>Education</h2>
+      <h2>{t('Education')}</h2>
       <div className="edu-list">
         {items.map((e, i) => (
           <div className="edu-item" key={i}>
             <div className="edu-left">
-              <p className="edu-school">{e.school}</p>
-              <p className="edu-detail">{e.detail}</p>
-              <p className="edu-degree">{e.degree}</p>
+              <p className="edu-school">{t(e.school)}</p>
+              <p className="edu-detail">{t(e.detail)}</p>
+              <p className="edu-degree">{t(e.degree)}</p>
             </div>
-            <span className="edu-period">{e.period}</span>
+            <span className="edu-period">{t(e.period)}</span>
           </div>
         ))}
       </div>
